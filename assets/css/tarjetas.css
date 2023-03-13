@@ -1,0 +1,86 @@
+.recetas{
+    background: #dab997;
+    padding: 2%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(20rem,2fr));
+    
+}
+.receta{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    padding: 1rem 0;
+    width: 100%;  
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2rem;
+    overflow: hidden;
+    gap: 2rem;
+    transition: all .3s ease-in;
+}
+.receta:hover{
+    transform: scale(1.05);
+}
+
+.receta-img{
+    width: 80%;
+    height: 50%;
+    border-radius: 2rem;
+}
+.receta-contenido{
+    width: 80%;
+}
+.receta-titulo{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.receta-texto{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.receta-boton{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    background: red;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    transition: all 1s ease-in-out;
+    
+}
+.receta-boton:hover{
+    cursor: pointer;
+    background: #9f1010;
+}
+@media screen and (max-width:600px) {
+    .recetas{
+        padding: 1rem;
+    }
+    .receta-boton{
+        font-size: .8rem;
+        font-weight: 400;
+        padding: .5rem;
+        
+    }
+    .receta-titulo{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .receta-texto{
+        font-size: .75rem;
+        font-weight: 400;
+    }
+    .receta-contenido{
+        width: 80%;
+    }
+    .receta-img{
+        width: 80%;
+        height: 50%;
+        border-radius: 2rem;
+    }
+}

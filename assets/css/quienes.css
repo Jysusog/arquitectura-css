@@ -1,0 +1,94 @@
+.quienes-somos{
+    padding: 5rem;
+    text-align: center;
+}
+.quienes_titulo{
+    color: #da2b1f;
+    font-family: pacifico,cursive;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.quienes_texto{
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: #555555;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+.persona{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.persona .persona_nombre{
+    font-family: pacifico,cursive;
+    font-size: 2.3rem;
+    color: #da2b1f;
+}
+.persona .persona_funcion{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #555555;
+    text-transform: uppercase;
+}
+.persona_imagen-persona{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: all .5s ease-in;
+}
+.persona_imagen-persona:hover{
+    transform: scale(1.05);
+}
+.imagen-1{
+    background-image: url(../img/personas/roberta.jpg);
+}
+.imagen-2{
+    background-image: url(../img/personas/marcela.jpg);
+}
+.imagen-3{
+    background-image: url(../img/personas/andrea.jpg);
+}
+@media screen and (max-width:1250px) {
+    .personas{
+        padding: 1rem;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:600px) {
+    .quienes_titulo{
+        font-size: 2rem;
+    }
+    .quienes_texto{
+        font-size: 1.2rem;
+    }
+    .persona_imagen-persona{
+        width: 100px;
+        height: 100px;
+    }
+    .quienes-somos{
+        padding: .5rem;
+    }
+    
+    .persona{
+        justify-content: center;
+        align-items: center;
+    }
+    .persona .persona_nombre{
+        font-size: 1.35rem;
+    }
+    .persona .persona_funcion{
+        font-size: .65rem;
+        font-weight: bold;
+    }
+}
+
